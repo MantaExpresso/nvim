@@ -56,6 +56,8 @@ return {
 				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
 
 				map("<leader>ne", vim.diagnostic.goto_next, "[N]ext [E]rror")
+
+				map("<leader>be", vim.diagnostic.goto_prev, "[B]ack [E]rror")
 				-- WARN: This is not Goto Definition, this is Goto Declaration.
 				--  For example, in C this would take you to the header.
 				-- map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
@@ -128,8 +130,8 @@ return {
 		-- See :help vim.diagnostic.Opts
 		vim.diagnostic.config({
 			severity_sort = true,
-			float = { border = "none", source = "if_many" },
-			underline = { severity = vim.diagnostic.severity.ERROR },
+			float = { border = "single", source = "if_many" },
+			-- underline = { severity = vim.diagnostic.severity.ERROR },
 			signs = {
 				text = {
 					[vim.diagnostic.severity.ERROR] = " ",
