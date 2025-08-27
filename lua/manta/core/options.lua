@@ -28,7 +28,6 @@ vim.cmd("highlight GitGraphTimestamp guifg=#cdd6f4")
 vim.cmd("highlight GitGraphBranchMsg guifg=#cdd6f4")
 vim.cmd("highlight GitGraphHash guifg=#cba6f7")
 vim.cmd("highlight GitGraphTag guifg=#f5c2e7")
-
 vim.cmd("highlight GitGraphBranch1 guifg=#f38ba8")
 vim.cmd("highlight GitGraphBranch2 guifg=#cba6f7")
 vim.cmd("highlight GitGraphBranch3 guifg=#fab387")

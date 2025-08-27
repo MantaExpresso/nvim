@@ -55,6 +55,7 @@ return {
 				-- or a suggestion from your LSP for this to activate.
 				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
 
+				map("<leader>ne", vim.diagnostic.goto_next, "[N]ext [E]rror")
 				-- WARN: This is not Goto Definition, this is Goto Declaration.
 				--  For example, in C this would take you to the header.
 				-- map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
@@ -137,19 +138,19 @@ return {
 					[vim.diagnostic.severity.HINT] = " ",
 				},
 			},
-			virtual_text = false, -- {
-			-- source = "if_many",
-			-- spacing = 2,
-			-- format = function(diagnostic)
-			-- 	local diagnostic_message = {
-			-- 			[vim.diagnostic.severity.ERROR] = diagnostic.message,
-			-- 			[vim.diagnostic.severity.WARN] = diagnostic.message,
-			-- 			[vim.diagnostic.severity.INFO] = diagnostic.message,
-			-- 			[vim.diagnostic.severity.HINT] = diagnostic.message,
-			-- 		}
-			-- 		return diagnostic_message[diagnostic.severity]
-			-- 	end,
-			-- },
+			virtual_text = {
+				source = "if_many",
+				spacing = 2,
+				format = function(diagnostic)
+					local diagnostic_message = {
+						[vim.diagnostic.severity.ERROR] = diagnostic.message,
+						[vim.diagnostic.severity.WARN] = diagnostic.message,
+						[vim.diagnostic.severity.INFO] = diagnostic.message,
+						[vim.diagnostic.severity.HINT] = diagnostic.message,
+					}
+					return diagnostic_message[diagnostic.severity]
+				end,
+			},
 		})
 
 		-- LSP servers and clients are able to communicate to each other what features they support.
