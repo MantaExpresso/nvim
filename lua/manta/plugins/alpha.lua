@@ -58,7 +58,7 @@ return {
 			dashboard.button("n", "  New File", "<cmd>ene<CR>"),
 			-- dashboard.button("Space nn", "  > File Explorer", "<cmd>NvimTreeToggle<CR>"),
 			dashboard.button("y", "󰇥  Yazi", "<cmd>Yazi<CR>"),
-			dashboard.button("f", "  FZF ", "<cmd>Telescope find_files<CR>"),
+			dashboard.button("f", "  FZF ", "<cmd>FzfLua files<CR>"),
 			dashboard.button("q", "󰈆  Exit", "<cmd>qa<CR>"),
 		}
 		vim.cmd("hi AlphaShortcut guifg=text")
