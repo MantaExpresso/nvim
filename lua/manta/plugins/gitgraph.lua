@@ -8,14 +8,7 @@ return {
 		})
 	end,
 	opts = {
-		-- colors = {
-		-- 	GitGraphBranch = "#e5c890",
-		-- },
 		git_cmd = "git",
-		-- symbols = {
-		-- 	merge_commit = "M",
-		-- 	commit = "*",
-		-- },
 		symbols = {
 			merge_commit = "",
 			commit = "",

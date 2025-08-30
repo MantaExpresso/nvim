@@ -2,10 +2,19 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("i", "<C-i>", "<ESC>")
 -- keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("i", "kj", "<ESC>")
+-- FUCK WHOEVER MESSED UP SHIT SO CTRL I DOESN'T WORK ANYMORE (It was probally me somewhere)
 
 keymap.set("n", "<leader>cc", "<cmd>Cord toggle<CR>")
+
+local isVirtualTextVisible = true
+keymap.set("n", "<leader>vt", function()
+	isVirtualTextVisible = not isVirtualTextVisible
+	vim.diagnostic.config({
+		virtual_text = isVirtualTextVisible,
+	})
+end)
 
 keymap.set("n", "<leader>hh", "<cmd>BufferLineCyclePrev<CR>")
 keymap.set("n", "<leader>ll", "<cmd>BufferLineCycleNext<CR>")
