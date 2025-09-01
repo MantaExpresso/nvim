@@ -31,6 +31,9 @@ return {
 			},
 		})
 
+		vim.filetype.add({
+			pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+		})
 		local keymap = vim.keymap
 		keymap.set("n", "<leader>ns", "<cmd>InspectTree<CR>")
 	end,
