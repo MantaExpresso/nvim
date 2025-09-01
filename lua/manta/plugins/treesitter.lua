@@ -11,6 +11,7 @@ return {
 				enable = true,
 			},
 			ensure_installed = {
+				"hyprlang",
 				"toml",
 				"ron",
 				"lua",

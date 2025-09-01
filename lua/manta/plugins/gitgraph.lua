@@ -1,11 +1,7 @@
 return {
 	"isakbm/gitgraph.nvim",
 	config = function()
-		require("gitgraph").setup({
-			colors = {
-				GitGraphBranch1 = "blue",
-			},
-		})
+		require("gitgraph").setup({})
 	end,
 	opts = {
 		git_cmd = "git",

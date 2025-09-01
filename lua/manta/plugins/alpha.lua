@@ -46,7 +46,7 @@ return {
 			-- " ┃  ██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   ██║  ██║  ║",
 			-- " ┃  ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝  ║",
 			-- " ┗━━━━━━━━━━━━━━━━━━━━━━━═══════════════════════════╝",
-			-- "                                                  ",
+			-- "                                                     ",
 		}
 		local lazy_stats = require("lazy").stats()
 
@@ -54,9 +54,7 @@ return {
 		dashboard.section.footer.opts.hl = "AlphaFooter"
 
 		dashboard.section.buttons.val = {
-			-- dashboard.button(" ", "   █", "<cmd>help<CR>"),
-			dashboard.button("n", "  New File", "<cmd>ene<CR>"),
-			-- dashboard.button("Space nn", "  > File Explorer", "<cmd>NvimTreeToggle<CR>"),
+			-- dashboard.button("n", "  New File", "<cmd>ene<CR>"),
 			dashboard.button("y", "󰇥  Yazi", "<cmd>Yazi<CR>"),
 			dashboard.button("f", "  FZF ", "<cmd>FzfLua files<CR>"),
 			dashboard.button("q", "󰈆  Exit", "<cmd>qa<CR>"),

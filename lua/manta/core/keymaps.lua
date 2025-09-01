@@ -3,8 +3,9 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- keymap.set("n", "<leader>nh", ":nohl<CR>")
--- keymap.set("i", "kj", "<ESC>")
-keymap.set("i", "C-[", "<ESC>")
+keymap.set("i", "kj", "<ESC>")
+-- I like kj because it doesn't take my hands off the homerow
+-- keymap.set("i", "C-[", "<ESC>")
 -- FUCK WHOEVER MESSED UP SHIT SO CTRL I DOESN'T WORK ANYMORE (It was probally me somewhere)
 
 keymap.set("n", "<leader>cc", "<cmd>Cord toggle<CR>")
