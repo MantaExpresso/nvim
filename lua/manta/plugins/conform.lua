@@ -14,7 +14,7 @@ return {
 				rust = { "rustfmt" }, -- installed via: rustup component add rustfmt
 				toml = { "tombi", "taplo" },
 				gdscript = { "gdtoolkit" },
-				go = { "crlfmt" },
+				-- go = { "gofumpt" },
 			},
 			format_on_save = {
 				isp_fallback = true,
