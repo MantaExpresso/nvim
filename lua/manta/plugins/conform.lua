@@ -5,15 +5,16 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
+				json = { "jq" },
 				html = { "prettier" },
 				css = { "prettier" },
-				json = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				rust = { "rustfmt" }, -- installed via: rustup component add rustfmt
 				toml = { "tombi", "taplo" },
 				gdscript = { "gdtoolkit" },
+				qml = { "prettier" },
 				-- go = { "gofumpt" },
 			},
 			format_on_save = {
