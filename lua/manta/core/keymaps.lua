@@ -30,4 +30,7 @@ keymap.set("n", "<leader>dv", "<cmd>DiffviewOpen<CR>")
 keymap.set("n", "<leader>ff", "<cmd>FzfLua files<cr>")
 keymap.set("n", "<leader>fr", "<cmd>FzfLua oldfiles<cr>")
 keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>")
+
 keymap.set("n", "<leader>cm", "<cmd>delmarks A-Z0-9<cr>")
+
+keymap.set("n", "<leader>do", "<cmd>lua require('dapui').toggle()<cr>")
