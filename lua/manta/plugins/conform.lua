@@ -15,6 +15,7 @@ return {
 				toml = { "tombi", "taplo" },
 				gdscript = { "gdtoolkit" },
 				qml = { "prettier" },
+				c = { "clang-format" },
 				-- go = { "gofumpt" },
 			},
 			format_on_save = {
