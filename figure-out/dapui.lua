@@ -6,5 +6,8 @@ return {
 	},
 	config = function()
 		require("dapui").setup()
+		require("lazydev").setup({
+			library = { "nvim-dap-ui" },
+		})
 	end,
 }
