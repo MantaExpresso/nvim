@@ -56,7 +56,8 @@ return {
 		dashboard.section.buttons.val = {
 			-- dashboard.button("n", "  New File", "<cmd>ene<CR>"),
 			dashboard.button("y", "󰇥  Yazi", "<cmd>Yazi<CR>"),
-			dashboard.button("f", "  FZF ", "<cmd>FzfLua files<CR>"),
+			dashboard.button("f", ">  Fzf ", "<cmd>FzfLua files<CR>"),
+			dashboard.button("r", "  Recent Files ", "<cmd>FzfLua oldfiles<CR>"),
 			dashboard.button("q", "󰈆  Exit", "<cmd>qa<CR>"),
 		}
 		vim.cmd("hi AlphaShortcut guifg=text")
